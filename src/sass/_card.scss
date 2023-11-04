@@ -1,0 +1,53 @@
+.favoritecard {
+
+    &__container {
+        padding: 1.5rem;
+        background-color: $color-tertiary;
+        border-radius: 3px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__img img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__info {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    &__description {
+        max-width: 30rem;
+        height: auto;
+        overflow: visible;
+        overflow-wrap: anywhere;
+        display: block;
+    }
+
+    &__btn {
+        border: none;
+        background-color: $color-primary;
+        color: $color-forth;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        border-radius: 3px;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    &__btn a:link,
+    &__btn a:visited {
+        text-decoration: none;
+        color: black;
+    }
+}

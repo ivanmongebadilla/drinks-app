@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import SearchPage from "./pages/SearchPage";
+import { useState } from "react";
+
+const queryClient = new QueryClient();
 
 function App() {
+  const [type, setType] = useState(null)
+
+  const searchType = (type) => {
+    setType(type)
+  }
+
+  const router = createBrowserRouter([
+    { path: '/', element: <MainPage searchTypeFunc={searchType}/> },
+    { path: '/search', element: <SearchPage type={type}/> },
+  ])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router}/>
+    </QueryClientProvider>
   );
 }
 

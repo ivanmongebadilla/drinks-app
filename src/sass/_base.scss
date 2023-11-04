@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+$color-primary: #ece0d1;
+$color-secondary: #dbc1ac;
+$color-tertiary: #967259;
+$color-forth: #634832;
+$color-fifth: #38220f;
+$color-sixth: white;
+$color-seventh: #e8e0d6;
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 62.5%; //1rem = 10px
+}
+
+body {
+  margin: 0;
+  background-color: $color-seventh !important;
+}
+
+.mainsection {
+  display: flex;
+  flex-direction: column;
+}
