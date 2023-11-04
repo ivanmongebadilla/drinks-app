@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/drinks-app/static/css/main.f56ca36a.css",
+    "main.js": "/drinks-app/static/js/main.18ccef4e.js",
+    "static/media/ingredients.jpg": "/drinks-app/static/media/ingredients.4bfd491db7fe16c970c9.jpg",
+    "static/media/barman-equipmencocktailbar.jpg": "/drinks-app/static/media/barman-equipmencocktailbar.f51f06fded907c9961c2.jpg",
+    "static/media/ezgif.com-webp-to-jpg.jpg": "/drinks-app/static/media/ezgif.com-webp-to-jpg.f7e43a25a8ac3ced6c15.jpg",
+    "static/media/rum-and-orange-cocktail.jpg": "/drinks-app/static/media/rum-and-orange-cocktail.3d42cc26e3f279b303c9.jpg",
+    "index.html": "/drinks-app/index.html",
+    "main.f56ca36a.css.map": "/drinks-app/static/css/main.f56ca36a.css.map",
+    "main.18ccef4e.js.map": "/drinks-app/static/js/main.18ccef4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f56ca36a.css",
+    "static/js/main.18ccef4e.js"
+  ]
+}
