@@ -2,12 +2,16 @@
     width: 98vw;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    position: relative;
+    position: absolute;
+    top: 170%;
+    @media only screen and (max-width: $bp-large) {
+        top: 260%;
+    }
 
 
     &__container {
         position: absolute;
-        width: 80rem;
+        width: 60vw;
         left: 50%;
         transform: translate(-50%, 0%);
         padding-bottom: 10px;
@@ -20,9 +24,11 @@
 
     &__CardContainer {
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         justify-content: space-between;
         margin-bottom: 5rem;
+        max-width: 60vw;
     }
 
     &__card--container {

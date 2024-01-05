@@ -24,14 +24,23 @@
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media only screen and (max-width: $bp-largest) {
+            padding: 10rem;
+        }
 
         &--title {
             font-size: 4rem;
             color: $color-tertiary;
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 3rem;
+            }
         }
         &--text {
             font-size: 2.3rem;
             color: $color-tertiary;
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1.8rem;
+            }
         }
         &--btn {
             border: none;
@@ -42,6 +51,10 @@
             text-decoration: none;
             font-size: 2rem;
             border-radius: 3px;
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1.5rem;
+                padding: 8px 25px;
+            }
         }
     }
 }

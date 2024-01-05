@@ -10,7 +10,9 @@ const CocktailsIntroSection = () => {
             <div className='introsection__content'>
                 <h1 className='introsection__content--title'>Find your Favorite Cocktail</h1>
                 <h3 className='introsection__content--text'>You can search for amazing drinks and cocktails from around the world.</h3>
-                <button className='introsection__content--btn'>Search Cockatils</button>
+                <a href='#searchSectionId'>
+                    <button className='introsection__content--btn'>Search Cockatils</button>
+                </a>
             </div>
         </section>
     )

@@ -38,12 +38,21 @@ body {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 75em) {
+      .introsection__content {
+        padding: 10rem; } }
     .introsection__content--title {
       font-size: 4rem;
       color: #967259; }
+      @media only screen and (max-width: 75em) {
+        .introsection__content--title {
+          font-size: 3rem; } }
     .introsection__content--text {
       font-size: 2.3rem;
       color: #967259; }
+      @media only screen and (max-width: 75em) {
+        .introsection__content--text {
+          font-size: 1.8rem; } }
     .introsection__content--btn {
       border: none;
       background-color: #ece0d1;
@@ -53,16 +62,20 @@ body {
       text-decoration: none;
       font-size: 2rem;
       border-radius: 3px; }
+      @media only screen and (max-width: 75em) {
+        .introsection__content--btn {
+          font-size: 1.5rem;
+          padding: 8px 25px; } }
 
 .favoritesection {
   width: 98vw;
   margin-top: 3rem;
   position: relative;
   margin-bottom: 3rem;
-  height: 70rem; }
+  height: auto; }
   .favoritesection__container {
     position: absolute;
-    width: 80rem;
+    width: auto;
     left: 50%;
     transform: translate(-50%, 0%); }
   .favoritesection__title {
@@ -70,10 +83,14 @@ body {
     color: #967259; }
   .favoritesection__items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 2.5rem;
     row-gap: 3rem;
     align-items: stretch; }
+    @media only screen and (max-width: 53.125em) {
+      .favoritesection__items {
+        grid-template-columns: repeat(2, 20rem);
+        justify-items: center; } }
 
 .favoritecard__container {
   padding: 1.5rem;
@@ -84,7 +101,8 @@ body {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 18rem; }
 
 .favoritecard__img img {
   margin: 0 auto;
@@ -161,10 +179,14 @@ body {
   width: 98vw;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  position: relative; }
+  position: absolute;
+  top: 170%; }
+  @media only screen and (max-width: 53.125em) {
+    .searchsection {
+      top: 260%; } }
   .searchsection__container {
     position: absolute;
-    width: 80rem;
+    width: 60vw;
     left: 50%;
     transform: translate(-50%, 0%);
     padding-bottom: 10px; }
@@ -173,9 +195,11 @@ body {
     color: #967259; }
   .searchsection__CardContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    max-width: 60vw; }
   .searchsection__card--container {
     max-width: 25rem;
     padding: 1rem;

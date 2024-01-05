@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Search = (props) => {
     return (
-        <section className="searchsection">
+        <section className="searchsection" id="searchSectionId">
             <div className="searchsection__container">
                 <h3 className="searchsection__title">Search Cocktails</h3>
                 <div className='searchsection__CardContainer'>
