@@ -35,6 +35,7 @@ body {
     padding: 15rem;
     text-align: center;
     position: absolute;
+    width: 60rem;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%); }
@@ -183,7 +184,7 @@ body {
   top: 170%; }
   @media only screen and (max-width: 53.125em) {
     .searchsection {
-      top: 260%; } }
+      top: 265%; } }
   .searchsection__container {
     position: absolute;
     width: 60vw;
